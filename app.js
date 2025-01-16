@@ -45,14 +45,14 @@ function adicionarAmigo() {
 }  
 
 function sortearAmigo() {
-    if (campoListaAmigos.innerHTML == '' || campoListaAmigos.innerHTML == null) {
+    if (listAmigos.length == 0 || listAmigos == null) {
         alert('A lista de nomes está vazia!');
     } else {
         let campoResultado = document.getElementById('resultado');
         campoResultado.innerHTML = '';
 
         let idx = parseInt(Math.random() * listAmigos.length);
-        
+
         campoResultado.appendChild(gerarListItem(listAmigos[idx]));
         limparLista();
     }
