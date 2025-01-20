@@ -3,7 +3,17 @@ Este projeto foi desenvolvido para atender o challenge de lógica de programaç�
 
 ## 📋 Funcionalidades:
 - **Adicionar nomes a lista de participantes;**
+- **Remover nomes da lista de participantes;**
 - **Sortear um nome dentre a lista de participantes.**
+
+### Adicionando nomes:
+![Demonstração do projeto](https://github.com/jplimw18/challenge-amigo-secreto-alura/blob/main/assets/GIF/adicionar-gif.gif)
+
+### Removendo nomes:
+![Demonstração do projeto](https://github.com/jplimw18/challenge-amigo-secreto-alura/blob/main/assets/GIF/remover-gif.gif)
+
+## Sorteando nomes:
+![Demonstração do projeto](https://github.com/jplimw18/challenge-amigo-secreto-alura/blob/main/assets/GIF/sortear-gif.gif)
   
 ## 🛠️ Tecnologias utilizadas:
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript)
