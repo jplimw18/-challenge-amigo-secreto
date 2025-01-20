@@ -143,7 +143,7 @@ ul {
 
 li {
     display: flex;
-    align-items: center;
+    align-items: center ;
 }
 
 .result-list {
