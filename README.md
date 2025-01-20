@@ -1,5 +1,6 @@
 # &#x1F381; &#x1F381; Sorteador Amigo Secreto &#x1F381; &#x1F381;
 Este projeto foi desenvolvido para atender o challenge de lógica de programação da alura x Oracle ONE 🚀🚀.
+### link para o acesso ao projeto em funcionamento: https://jplimw18.github.io/challenge-amigo-secreto-alura/
 
 ## 📋 Funcionalidades:
 - **Adicionar nomes a lista de participantes;**
@@ -26,3 +27,5 @@ Este projeto foi desenvolvido para atender o challenge de lógica de programaç�
 - **Sorteio com restrições** (um participante não pode tirar um outro específico, por exemplo.);
 - **Envio dos resultados via email para cada participante;**
 - ...
+
+
