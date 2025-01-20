@@ -125,6 +125,13 @@ button {
     background-color: #a1a1a1;
 }
 
+.button-remove {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 5px;
+}
+
 /* Listas */
 ul {
     list-style-type: none;
@@ -132,6 +139,11 @@ ul {
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
 }
 
 .result-list {
