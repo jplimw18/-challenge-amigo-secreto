@@ -2,11 +2,12 @@
 let btnAddAmigo = document.getElementById('btnAdd');
 let btnSortearAmigo = document.getElementById('btnDraw');
 let campoListaAmigos = document.getElementById('listaAmigos')
+let btnSortearPares = document.getElementById('btnDrawPar');
 
 // inserindo eventos de clique nos respectivos botões
 if (btnAddAmigo != null) { btnAddAmigo.addEventListener('click', adicionarAmigo); }
 if (btnSortearAmigo != null) { btnSortearAmigo.addEventListener('click', sortearAmigo); }
-
+if (btnSortearPares != null) { btnSortearPares.addEventListener('click', sortearAmigoPar) }
 
 // ------
 
@@ -27,6 +28,16 @@ function gerarListItem(content) {
 
     let li = document.createElement('li');
     li.appendChild(btnRemover);
+    li.appendChild(p);
+
+    return li;
+}
+
+function gerarResultItem(content) {
+    let p = document.createElement('p');
+    p.innerHTML = content;
+
+    let li = document.createElement('li');
     li.appendChild(p);
 
     return li;
@@ -74,7 +85,20 @@ function sortearAmigo() {
 
         let idx = parseInt(Math.random() * listAmigos.length);
 
-        campoResultado.appendChild(gerarListItem(listAmigos[idx]));
+        campoResultado.appendChild(gerarResultItem(listAmigos[idx]));
         limparLista();
     }  
+}
+
+function sortearAmigoPar() {
+    if (listAmigos.length == 0 || listAmigos == null) {
+        alert('A lista de nomes está vazia!');
+    } else if (listAmigos.length % 2 != 0) {
+        alert('A lista de nomes não possui nomes suficientes para formar pares!');
+    } else {
+        let campoResultado = document.getElementById('resultado');
+        campoResultado.innerHTML = "Teste";
+
+        
+    }
 }
