@@ -89,7 +89,10 @@ body {
 
 .button-container {
     width: 300px;
+
+    display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 /* Estilos de entrada de texto */
@@ -171,4 +174,18 @@ li {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.button-draw-par {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+}
+
+.button-draw-par img {
+    margin-right: 40px;
 }

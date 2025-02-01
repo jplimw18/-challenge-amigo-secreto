@@ -29,12 +29,6 @@ function gerarListItem(content) {
     li.appendChild(btnRemover);
     li.appendChild(p);
 
-    if (listAmigos == null || listAmigos == []) {
-        li.id = `amg${0}`;
-    } else {
-        li.id = `amg${listAmigos.length}`;
-    }
-
     return li;
 }
 
