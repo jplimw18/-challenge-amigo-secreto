@@ -97,8 +97,13 @@ function sortearAmigoPar() {
         alert('A lista de nomes não possui nomes suficientes para formar pares!');
     } else {
         let campoResultado = document.getElementById('resultado');
-        campoResultado.innerHTML = "Teste";
 
-        
+        let idx1 = parseInt(Math.random() * listAmigos.length);
+        let idx2;
+        do {
+            idx2 = parseInt(Math.random() * listAmigos.length);
+        } while (idx1 == idx2);
+
+        campoResultado.appendChild(gerarResultItem(`${listAmigos[idx1]} : ${listAmigos[idx2]}`));
     }
 }
